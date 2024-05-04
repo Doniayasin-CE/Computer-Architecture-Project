@@ -1,0 +1,10 @@
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\modules\src/instruction_reg.v|]
+TemplateId=2
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\modules\src/memory.v|]
+TemplateId=2
+ActiveDocument=1
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\modules\src/memory_data_reg.v|]
+TemplateId=2
+tab=lu

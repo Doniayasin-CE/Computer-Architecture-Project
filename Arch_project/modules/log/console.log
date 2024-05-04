@@ -1,0 +1,69 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve -msg 5 -sv2k12 -work modules $dsn/src/memory.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: memory_tb.
+# $root top modules: mux_2x1_tb mux_4x1_tb pc_tb left_shift_two_tb adder_tb ALU_tb RegFile_tb Extender_tb memory_tb Memory_Data_Register_tb instruction_register_tb sp_tb mux_3x1_tb datapath_tb tb_mux_4x1.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 Module 'memory' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+memory_tb memory_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 Module 'memory' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.3 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.7 [s]
+# SLP: Finished : 2.0 [s]
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 13 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 2.3 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4682 kB (elbread=427 elab2=4121 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\PC\Documents\My_univirsite\Fourth_Year\First _Semester\ARCHITECTURE\project2\project2024\Arch_project_final\Arch_project\modules\src\wave.asdb
+#  7:59 PM, Wednesday, January 31, 2024
+#  Simulation has been initialized
+# add wave -noreg {/memory_tb/clk}
+# add wave -noreg {/memory_tb/memRead}
+# add wave -noreg {/memory_tb/memWrite}
+# add wave -noreg {/memory_tb/address}
+# add wave -noreg {/memory_tb/data_in}
+# add wave -noreg {/memory_tb/data_out}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/PC/Documents/My_univirsite/Fourth_Year/First _Semester/ARCHITECTURE/project2/project2024/Arch_project_final/Arch_project/modules/src/wave.asdb'.
+run
+# KERNEL: At time                    0, address 00000000, data written 00000000, data read xxxxxxxx
+# KERNEL: At time               100000, address 00000000, data written 00000123, data read xxxxxxxx
+# KERNEL: At time               125000, address 00000000, data written 00000123, data read 00000123
+# KERNEL: At time               140000, address 00000100, data written 456789ab, data read 00000123
+# KERNEL: At time               165000, address 00000100, data written 456789ab, data read 456789ab
+# KERNEL: At time               180000, address 00000200, data written cdef0123, data read 456789ab
+# KERNEL: At time               205000, address 00000200, data written cdef0123, data read cdef0123
+# RUNTIME: Info: RUNTIME_0068 memory.v (193): $finish called.
+# KERNEL: Time: 220 ns,  Iteration: 0,  Instance: /memory_tb,  Process: @INITIAL#139_1@.
+# KERNEL: stopped at time: 220 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.

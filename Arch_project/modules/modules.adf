@@ -1,0 +1,76 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=modules
+[Library]
+modules=.\modules\modules.lib
+[$LibMap$]
+modules=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+[IMPLEMENTATION]
+UCF=
+[Files]
+/mux_2x1.v=-1
+/mux_3x1.v=-1
+/pc.v=-1
+/pc_tb.asdb=-1
+/pc_tb.awc=-1
+/left_shift_two.v=-1
+/left_shit_two_test.asdb=-1
+/left_shit_two_test.awc=-1
+/sp.v=-1
+/pc_test_bench.asdb=-1
+/pc_test_bench.awc=-1
+/adder.v=-1
+/controller.v=-1
+/ALU.v=-1
+/register_file.v=-1
+/Extender.v=-1
+/memory.v=-1
+/memory_data_reg.v=-1
+/instruction_reg.v=-1
+/datapath.v=-1
+/nbit_mux.v=-1
+/mux_4x1.v=-1
+/reg_alu_out.v=-1
+/datatpath_tb.v=-1
+[Files.Data]
+.\src\mux_2x1.v=Verilog Source Code
+.\src\mux_3x1.v=Verilog Source Code
+.\src\pc.v=Verilog Source Code
+.\src\pc_tb.asdb=Accelerated Waveform File
+.\src\pc_tb.awc=Accelerated Waveform Configuration
+.\src\left_shift_two.v=Verilog Source Code
+.\src\left_shit_two_test.asdb=Accelerated Waveform File
+.\src\left_shit_two_test.awc=Accelerated Waveform Configuration
+.\src\sp.v=Verilog Source Code
+.\src\pc_test_bench.asdb=Accelerated Waveform File
+.\src\pc_test_bench.awc=Accelerated Waveform Configuration
+.\src\adder.v=Verilog Source Code
+.\src\controller.v=Verilog Source Code
+.\src\ALU.v=Verilog Source Code
+.\src\register_file.v=Verilog Source Code
+.\src\Extender.v=Verilog Source Code
+.\src\memory.v=Verilog Source Code
+.\src\memory_data_reg.v=Verilog Source Code
+.\src\instruction_reg.v=Verilog Source Code
+.\src\datapath.v=Verilog Source Code
+.\src\nbit_mux.v=Verilog Source Code
+.\src\mux_4x1.v=Verilog Source Code
+.\src\reg_alu_out.v=Verilog Source Code
+.\src\datatpath_tb.v=Verilog Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
